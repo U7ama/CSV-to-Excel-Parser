@@ -1,0 +1,153 @@
+.loginWrapper {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('../public/bg-login.jpeg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.absoluteWrapper {
+    position: absolute;
+    z-index: 50;
+    top: 0;
+    left: 0;
+}
+
+.maxWidthWrapper {
+    max-width: 400px;
+    margin: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.loginTitle {
+    color: var(--text-black);
+    text-align: center;
+    font-size: 28px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.formWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    z-index: 100;
+}
+
+.labelWrapper {
+    color: #172B4D;
+    font-size: 16px;
+    margin: 0;
+    line-height: normal;
+}
+
+.inputGroup {
+    position: relative;
+    width: 100%;
+}
+
+.inputField {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    border: 1px solid #a1a5ae6a;
+}
+
+.inputWrapper {
+    width: 100%;
+    border-radius: 8px;
+    /* border: 1px solid gray; */
+    padding: 8px;
+    color: black;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.passwordIcon {
+    position: absolute;
+    right: 10px;
+    top: 55%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+.checkboxContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 7px;
+}
+
+.checkbox {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.checkboxLabel {
+    font-size: 14px;
+}
+
+
+.submitButton {
+    margin-top: 10px;
+    width: 105%;
+    background: linear-gradient(180deg, #2980B9, #27AE60);
+    border-radius: 8px;
+    height: 52px;
+    color: white;
+    font-size: 16px;
+    margin-left: 5px;
+    border: none;
+}
+
+.submitButton:hover {
+    cursor: pointer;
+}
+
+.logoutButton {
+    margin-top: 10px;
+    width: 105%;
+    background: linear-gradient(180deg, #2980B9, #ccd1ce);
+    border-radius: 8px;
+    height: 52px;
+    color: white;
+    font-size: 16px;
+    margin-left: 5px;
+    border: none;
+}
+
+.logoutButton:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .maxWidthWrapper {
+        max-width: 60%;
+        margin: 10px;
+    }
+
+    .submitButton,
+    .logoutButton {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .formWrapper {
+        gap: 20px;
+    }
+}
